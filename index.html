@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Spartan">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Frontend Mentor | Room homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 16px;
+            text-align: center;
+            background-color: var(--VeryDarkGray);
+            Color: var(--White);
+        }
+        
+        .attribution a {
+            color: var(--DarkGray);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-1 row">
+        <div class="col-lg-7 col-md-6 img-container">
+            <nav class="navbar nav-container navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+        <span class="navbar-toggler-icon">
+            <img src="images/icon-close.svg" class="img-fluid menu-close" style="display:none">
+            <img src="images/icon-hamburger.svg" class="img-fluid menu-open">
+        </span>
+        </button>
+                    <div class="collapse navbar-collapse" id="topNav">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="img-1">
+                        <picture>
+                            <source media="(max-width:500px)" class="img-fluid slides-img" srcset="images/mobile-image-hero-1.jpg">
+                            <img src="images/desktop-image-hero-1.jpg" class="img-fluid slides-img">
+                        </picture>
+                    </div>
+                    <div class="carousel-item" id="img-2">
+                        <picture>
+                            <source media="(max-width:500px)" class="img-fluid slides-img" srcset="images/mobile-image-hero-2.jpg">
+                            <img src="images/desktop-image-hero-2.jpg" class="img-fluid slides-img">
+                        </picture>
+                    </div>
+                    <div class="carousel-item" id="img-3">
+                        <picture>
+                            <source media="(max-width:500px)" class="img-fluid slides-img" srcset="images/mobile-image-hero-3.jpg">
+                            <img src="images/desktop-image-hero-3.jpg" class="img-fluid slides-img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 text-container">
+            <div class="hero-text">
+                <span class="slide-text img1-text-content" id="img-1">
+                <h1 class="hero-title">
+                    Discover innovative<br> ways to decorate
+                </h1>
+                <p class="hero-paragraph">
+                    We provide unmatched quality, comfort, and style for property owners across the country. 
+                    Our experts combine form and function in bringing your vision to life. 
+                    Create a room in your own style with our collection and make your property a reflection of
+                    you and what you love.
+                </p>
+                <a class="hero-link">
+                    Shop now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+                </a>
+                </span>
+                <span class="img2-text-content slide-text" id="img-2" style="display:none">
+                    <h1 class="hero-title">
+                        We are available<br> all across the globe
+                    </h1>
+                    <p class="hero-paragraph">
+                        With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator.
+                        Any questions? Don't hesitate to contact us today.
+                    </p>
+                    <a class="hero-link">
+                        Shop now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+                    </a>
+                    </span>
+                <span class="img3-text-content slide-text" id="img-3" style="display:none">
+                        <h1 class="hero-title">
+                            Manufactured with the best materials
+                        </h1>
+                        <p class="hero-paragraph">
+                            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect
+                            and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.
+                        </p>
+                        <a class="hero-link">
+                            Shop now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+                        </a>
+                        </span>
+
+            </div>
+            <div class="img-btns">
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <img src="images/icon-angle-left.svg" class="img-fluid skip-btn">
+          </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <img src="images/icon-angle-right.svg" class="img-fluid skip-btn">
+          </button>
+            </div>
+        </div>
+    </div>
+    <div class="section-2 row">
+        <div class="col-lg-4 col-md-6 img-sect2-container">
+            <img src="images/image-about-dark.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 text-sect2-container">
+            <h5 class="sect2-title">About our furniture</h5>
+            <p class="sect2-paragraph">
+                Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary
+                styles or anything in between. Product specialists are available to help you create your dream space.
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6 img-sect2-container">
+            <img src="images/image-about-light.jpg" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="attribution p-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Coded by <a href="#">Roberto Smith</a>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="scripts/text-change.js"></script>
+    <script src="scripts/close.js"></script>
+</body>
+
+</html>
